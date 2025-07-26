@@ -43,5 +43,21 @@ body{
   }
 }
 
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(1rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+ 
+
+
  
 

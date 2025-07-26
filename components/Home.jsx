@@ -4,6 +4,7 @@ import { FaLinkedin, FaGithub } from 'react-icons/fa'
 import { HiOutlineArrowDown } from 'react-icons/hi'
 import { SlSocialLinkedin } from "react-icons/sl";
 import { LuSend } from "react-icons/lu";
+import { FaArrowDownLong } from "react-icons/fa6";
 
 const HomePage = () => {
   return (
@@ -54,7 +55,7 @@ const HomePage = () => {
             <h3 className='text-slate-600 font-semibold md:text-xl text-md '>Full Stack Developer</h3>
             <p className="md:text-md text-sm text-gray-500 ">
               Hi, I'm Ayush Rajput. A passionate Full Stack <br />
-              Developer based in Odisha, India.
+              Developer based in Uttar Pradesh, India.
             </p>
           </div>
 
@@ -63,7 +64,14 @@ const HomePage = () => {
               <p>Say Hello</p>
               <LuSend />
             </button>
-            <div className=''>Scroll down</div> 
+            <div className=" hidden md:flex items-center gap-2 text-slate-500 cursor-pointer w-fit">
+              <a href="#about" className="flex items-center gap-2">
+                <span className="font-medium">Scroll Down</span>
+                <FaArrowDownLong   style={{
+                    animation: "scroll 2s ease infinite",
+                  }} className="text-xl text-slate-500 animate-scroll-down" />
+              </a>
+           </div>
           </div>
         </div>
 
