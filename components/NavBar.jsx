@@ -9,26 +9,26 @@ const NavBar = () => {
     const[mobileMenuOpen , setMobileMenuOpen] = useState(false)
   return (
     <>
-    <div className='hidden fixed top-0 left-0 w-full px-20 shadow-md bg-white z-50 md:flex items-center  justify-between mx-auto p-4 border-b border-slate-300'>
-        <h1 className='text-3xl font-bold text-slate-600'>Ayush<span className='text-3xl text-red-400'>.</span></h1>
+    <div className='hidden fixed top-0 left-0 w-full px-20 shadow-md bg-[var(--bg-color)] z-50 md:flex items-center  justify-between mx-auto p-4  border-slate-300'>
+        <h1 className='text-3xl font-bold text-[var(--primary-text-color)]'>Ayush<span className='text-3xl text-red-400'>.</span></h1>
         {/* for desktop */}
-        <div className='flex gap-6 font-semibold text-slate-600 text-sm'>
+        <div className='flex gap-6 font-semibold text-[var(--primary-text-color)] text-sm'>
             {
-            navLinks.map((link , i)=>(
-                <a key={i} href={link?.path} className='hover:underline'>
-                    {link?.name}
-                </a>
-            ))
-        }
+                navLinks.map((link , i)=>(
+                    <a key={i} href={link?.path} className='hover:underline'>
+                        {link?.name}
+                    </a>
+                ))
+            }
         </div>
     </div>
 
       {/* for mobiles */}
-    <div className='md:hidden fixed top-0 left-0 shadow-md w-full bg-white z-50 flex items-center  justify-between p-4 border-b border-slate-300'>
-        <h1 className='text-3xl font-bold text-slate-600'>Ayush<span className='text-3xl text-red-400'>.</span></h1>
+    <div className='md:hidden fixed top-0 left-0 shadow-md w-full bg-[var(--bg-color)] z-50 flex items-center  justify-between p-4'>
+        <h1 className='text-3xl font-bold text-[var(--primary-text-color)]'>Ayush<span className='text-3xl text-red-400'>.</span></h1>
 
                  
-        <div onClick={()=>setMobileMenuOpen(!mobileMenuOpen)} className='text-3xl cursor-pointer md:hidden z-60'>
+        <div onClick={()=>setMobileMenuOpen(!mobileMenuOpen)} className='text-[var(--primary-text-color)] text-3xl cursor-pointer md:hidden z-60'>
             {mobileMenuOpen ?  <RxCross2 /> : <PiSquaresFour /> }
         </div>
 
@@ -37,7 +37,7 @@ const NavBar = () => {
       
         <div 
             className={`flex flex-col items-center fixed top-0 right-0 w-[60%] h-full transform transition-transform duration-500 ease-in-out max-w-xs gap-12 
-            font-semibold text-slate-600 text-md  z-50 bg-white p-6 rounded-xl shadow-lg 
+            font-semibold text-[var(--primary-text-color)] text-md  z-50 bg-[var(--bg-color)] p-6 rounded-xl shadow-lg 
             ${mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
             {
                 navLinks.map((link , i)=>(

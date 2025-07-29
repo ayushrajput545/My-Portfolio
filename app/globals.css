@@ -1,9 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 @import "tailwindcss";
 
+/* Light Mode (default) */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg-color: #ffffff;
+  --primary-text-color: #475569;
+  --secondary-text-color:#6b7280;
+}
+
+/* Dark Mode */
+.dark {
+  --bg-color: #000814;
+  --primary-text-color: #cbd5e1;
+  --secondary-text-color:#9ca3af;
 }
 
 @theme inline {
@@ -20,8 +29,11 @@
   }
 }
 
-body{
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
   font-family: "Poppins", sans-serif;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 @keyframes profile_animate {

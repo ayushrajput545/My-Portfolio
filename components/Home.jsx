@@ -13,7 +13,7 @@ const HomePage = () => {
       {/* For mobiles screens*/}
       <div className='md:hidden  flex items-center gap-5 pl-5 justify-center mt-5'>
 
-        <div className='flex flex-col gap-5'>
+        <div className='flex flex-col gap-5 text-[var(--primary-text-color)]'>
           <a href='https://www.linkedin.com/in/ayush-rajput-199574287/' target='_blank' className='text-3xl'>
             <SlSocialLinkedin/>
           </a>
@@ -38,7 +38,7 @@ const HomePage = () => {
       </div>
 
       {/*For desktop screens*/}
-      <div className='flex justify-between min-h-[460px] md:min-h-[660px] items-center gap-8 lg:px-36'>
+      <div className='flex justify-between min-h-[460px] md:min-h-[660px] items-center gap-8 lg:px-36 text-[var(--primary-text-color)]'>
  
         <div className='hidden md:flex flex-col gap-5 '>
           <a href='https://www.linkedin.com/in/ayush-rajput-199574287/' target='_blank' className='text-3xl'>
@@ -52,8 +52,8 @@ const HomePage = () => {
         <div className='flex flex-col mx-auto text-center md:text-start'>
           <div className='flex flex-col gap-2 mb-12'>
             <h1 className='md:text-[2.7rem] text-[2rem] text-[#0987d4] font-extrabold'>Ayush Rajput</h1>
-            <h3 className='text-slate-600 font-semibold md:text-xl text-md '>Full Stack Developer</h3>
-            <p className="md:text-md text-sm text-gray-500 ">
+            <h3  className='text-[var(--primary-text-color)] font-semibold md:text-xl text-md '>Full Stack Developer</h3>
+            <p className="md:text-md text-sm text-[var(--secondary-text-color)] ">
               Hi, I'm Ayush Rajput. A passionate Full Stack <br />
               Developer based in Uttar Pradesh, India.
             </p>
