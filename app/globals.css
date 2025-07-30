@@ -3,7 +3,7 @@
 
 /* Light Mode (default) */
 :root {
-  --bg-color: #ffffff;
+  --bg-color: #fcfcfc;
   --primary-text-color: #475569;
   --secondary-text-color:#6b7280;
 }
@@ -29,11 +29,16 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
   font-family: "Poppins", sans-serif;
   transition: background-color 0.3s, color 0.3s;
+  overflow-x: hidden;
 }
 
 @keyframes profile_animate {
