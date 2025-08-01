@@ -8,10 +8,10 @@ import { FaArrowDownLong } from "react-icons/fa6";
 
 const HomePage = () => {
   return (
-    <div className='w-11/12 mx-auto' id='home'>
+    <div className='w-11/12 mx-auto ' id='home'>
        
       {/* For mobiles screens*/}
-      <div className='md:hidden  flex items-center gap-5 pl-5 justify-center mt-5'>
+      <div className='md:hidden  flex items-center gap-5 pl-5 justify-center mt-20'>
 
         <div className='flex flex-col gap-5 text-[var(--primary-text-color)]'>
           <a href='https://www.linkedin.com/in/ayush-rajput-199574287/' target='_blank' className='text-3xl'>
@@ -59,13 +59,13 @@ const HomePage = () => {
             </p>
           </div>
 
-          <div className='flex flex-col justify-between md:h-[15rem] h-[10rem]'>
-            <button id='#contact' className='w-fit mx-auto md:mx-0 flex items-center gap-2 cursor-pointer hover:bg-slate-900 bg-slate-800 text-white py-[1rem] px-[2rem] rounded-2xl font-semibold text-xl'>
+          <div className='flex flex-col justify-between md:items-start  items-center md:h-[15rem] h-[10rem]'>
+            <a href='#contact' className='w-fit mx-auto md:mx-0 flex items-center gap-2 cursor-pointer hover:bg-slate-900 bg-slate-800 text-white py-[1rem] px-[2rem] rounded-2xl font-semibold text-xl'>
               <p>Say Hello</p>
               <LuSend />
-            </button>
-            <div className=" hidden md:flex items-center gap-2 text-slate-500 cursor-pointer w-fit">
-              <a href="#about" className="flex items-center gap-2">
+            </a>
+            <div className="flex items-center gap-2 text-slate-500 cursor-pointer w-fit">
+              <a href="#about" className="flex items-center gap-2 ">
                 <span className="font-medium">Scroll Down</span>
                 <FaArrowDownLong   style={{
                     animation: "scroll 2s ease infinite",
