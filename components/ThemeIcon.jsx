@@ -14,7 +14,7 @@ const ThemeIcon = () => {
   if (!mounted) return null
   return (
     <div className='w-11/12 mx-auto flex justify-end sticky top-[5rem]'>
-        <div  onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')} className='cursor-pointer bg-slate-300 rounded-full p-3 text-xl transition-all duration-500 ease-in-out'>
+        <div  onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')} className='cursor-pointer bg-[var(--border-color)] rounded-full p-3 text-xl transition-all duration-500 ease-in-out'>
             {
                 theme === 'dark' ? <MdOutlineLightMode /> : <MdOutlineDarkMode />
             }     

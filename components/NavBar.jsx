@@ -9,7 +9,7 @@ const NavBar = () => {
     const[mobileMenuOpen , setMobileMenuOpen] = useState(false)
   return (
     <>
-    <div className='hidden fixed top-0 left-0 w-full px-20 shadow-md bg-[var(--bg-color)] z-50 md:flex items-center  justify-between mx-auto p-4  border-slate-300'>
+    <div className='hidden fixed top-0 left-0 w-full px-20 shadow-md bg-[var(--bg-color)] z-50 md:flex items-center  justify-between mx-auto p-4 border-b  border-[var(--border-color)]'>
         <h1 className='text-3xl font-bold text-[var(--primary-text-color)]'>Ayush<span className='text-3xl text-red-400'>.</span></h1>
         {/* for desktop */}
         <div className='flex gap-6 font-semibold text-[var(--primary-text-color)] text-sm'>
@@ -24,7 +24,7 @@ const NavBar = () => {
     </div>
 
       {/* for mobiles */}
-    <div className='md:hidden fixed top-0 left-0 shadow-md w-full bg-[var(--bg-color)] z-50 flex items-center  justify-between p-4'>
+    <div className='md:hidden fixed top-0 left-0 shadow-md w-full bg-[var(--bg-color)] z-50 flex items-center  justify-between p-4 border-b  border-[var(--border-color)]'>
         <h1 className='text-3xl font-bold text-[var(--primary-text-color)]'>Ayush<span className='text-3xl text-red-400'>.</span></h1>
 
                  
